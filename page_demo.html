@@ -3,109 +3,110 @@
 <head>    
  <meta charset='utf-8'>    
  <link href="page.css  rel="stylesheet" type="text/css" />
- <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>//引入依赖
+ <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>//引入依赖
  <script src="pageing.js"></script>
 </head>    
     <body>  
     <body onload="goPage(1,8);">// 设定每一页加载的数量，当前第一页，每页8条数据。如下模拟数据
-    <table width="950" cellpadding="0" cellspacing="0" class="table2" align="center">    
+    <table class="table table-striped" align="center">    
     <thead>    
     <tr align="center">    
-    <td colspan="4" height="33" class="td0">添加用户</td>        
+    <td colspan="4" height="33" >添加用户</td>        
     </tr>    
     <tr align="center">    
-        <th width="150" height="33" class="td2">序号</th>    
-        <th width="300" class="td2">用户名</th>    
-        <th width="250" class="td2">身份</th>    
-        <th width="250" class="td2">操作</th>    
+        <td  height="33" >序号</td>    
+        <td  >用户名</td>    
+        <td  >身份</td>    
+        <td  >操作</td>    
     </tr>    
     </thead>    
     <tbody id="Tbody">    
     <tr align="center">    
-        <td class="td2" height="33" width="150">1</td>    
-        <td class="td2" >admin</td>    
-        <td class="td2" >管理员</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >1</td>    
+        <td  >admin</td>    
+        <td  >管理员</td>    
+        <td  ><a href="#">无</a></td>    
     </tr>
     <tr align="center">    
-        <td class="td2" height="33" width="150">2</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >2</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr>
     <tr align="center">    
-        <td class="td2" height="33" width="150">3</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >3</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">4</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >4</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">5</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >5</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">6</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >6</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">7</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >7</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">8</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >8</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">9</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >9</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">10</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >10</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">11</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >11</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">12</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >12</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr>
     <tr align="center">    
-        <td class="td2" height="33" width="150">13</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >13</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr> 
     <tr align="center">    
-        <td class="td2" height="33" width="150">14</td>    
-        <td class="td2" >bjli</td>    
-        <td class="td2" >ptyh</td>    
-        <td class="td2" ><a href="#">无</a></td>    
+        <td  height="33" >14</td>    
+        <td  >bjli</td>    
+        <td  >ptyh</td>    
+        <td  ><a href="#">无</a></td>    
     </tr>    
-    </tbody>    
 </table>    
 <div id="barcon" class="barcon" >    
     <div id="barcon1" class="barcon1"></div>    
