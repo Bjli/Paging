@@ -1,0 +1,126 @@
+<!doctype html>    
+<html>    
+<head>    
+ <meta charset='utf-8'>    
+ <link href="page.css  rel="stylesheet" type="text/css" />
+ <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>//引入依赖
+ <script src="pageing.js"></script>
+</head>    
+    <body>  
+    <body onload="goPage(1,8);">// 设定每一页加载的数量，当前第一页，每页8条数据。如下模拟数据
+    <table width="950" cellpadding="0" cellspacing="0" class="table2" align="center">    
+    <thead>    
+    <tr align="center">    
+    <td colspan="4" height="33" class="td0">添加用户</td>        
+    </tr>    
+    <tr align="center">    
+        <th width="150" height="33" class="td2">序号</th>    
+        <th width="300" class="td2">用户名</th>    
+        <th width="250" class="td2">身份</th>    
+        <th width="250" class="td2">操作</th>    
+    </tr>    
+    </thead>    
+    <tbody id="Tbody">    
+    <tr align="center">    
+        <td class="td2" height="33" width="150">1</td>    
+        <td class="td2" >admin</td>    
+        <td class="td2" >管理员</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr>
+    <tr align="center">    
+        <td class="td2" height="33" width="150">2</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr>
+    <tr align="center">    
+        <td class="td2" height="33" width="150">3</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">4</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">5</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">6</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">7</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">8</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">9</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">10</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">11</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">12</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr>
+    <tr align="center">    
+        <td class="td2" height="33" width="150">13</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr> 
+    <tr align="center">    
+        <td class="td2" height="33" width="150">14</td>    
+        <td class="td2" >bjli</td>    
+        <td class="td2" >ptyh</td>    
+        <td class="td2" ><a href="#">无</a></td>    
+    </tr>    
+    </tbody>    
+</table>    
+<div id="barcon" class="barcon" >    
+    <div id="barcon1" class="barcon1"></div>    
+        <div id="barcon2" class="barcon2">    
+            <ul>    
+                <li><a href="#" id="firstPage">首页</a></li>    
+                <li><a href="#" id="prePage">上一页</a></li>    
+                <li><a href="#" id="nextPage">下一页</a></li>    
+                <li><a href="#" id="lastPage">尾页</a></li>    
+                <li><select id="jumpWhere">    
+                </select></li>    
+                <li><a href="#" id="jumpPage" onclick="jumpPage()">跳转</a></li>    
+            </ul>    
+        </div>    
+</div>   
+</body>     
+</body>     
+</html>    
