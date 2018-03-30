@@ -1,2 +1,4 @@
 # Paging
-js+jquery 实现前端的分页功能
+js+jquery ʵ�ַ�ҳ
+
+![Demo](https://github.com/Bjli/Paging/raw/master/Screenshots/demo.jpg)
